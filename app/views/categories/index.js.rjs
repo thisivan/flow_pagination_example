@@ -1,0 +1,2 @@
+page.insert_html :bottom, :categories, :partial => @categories
+page.replace :flow_pagination, will_paginate(@categories, :renderer => FlowPagination::LinkRenderer)

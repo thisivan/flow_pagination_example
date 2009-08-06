@@ -1,0 +1,4 @@
+= javascript_include_tag :all
+%h1 Categories
+%ul#categories= render @categories
+= will_paginate @categories, :renderer => FlowPagination::LinkRenderer
